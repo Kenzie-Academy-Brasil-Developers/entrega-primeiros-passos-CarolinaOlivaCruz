@@ -40,27 +40,27 @@ if(nome.length < 5) {
     alert('Nome Inválido');
 }
 
-if(nota1 < 0 || nota1 > 10){
+if(nota1 <= 0 || nota1 >= 10){
     alert('Nota Inválida');
-} else if(nota2 < 0 || nota2 > 10){
+} else if(nota2 <= 0 || nota2 >= 10){
     alert('Nota Inválida');
-} else if(nota3 < 0 || nota3 > 10){
+} else if(nota3 <= 0 || nota3 >= 10){
     alert('Nota Inválida');
-} else if(nota4 < 0 || nota4 > 10){
+} else if(nota4 <= 0 || nota4 >= 10){
     alert('Nota Inválida');
-} else if(nota5 < 0 || nota5 > 10){
+} else if(nota5 <= 0 || nota5 >= 10){
     alert('Nota Inválida');
-} else if(nota6 < 0 || nota6 > 10){
+} else if(nota6 <= 0 || nota6 >= 10){
     alert('Nota Inválida');
-} else if(nota7 < 0 || nota7 > 10){
+} else if(nota7 <= 0 || nota7 >= 10){
     alert('Nota Inválida');
-} else if(nota8 < 0 || nota8 > 10){
+} else if(nota8 <= 0 || nota8 >= 10){
     alert('Nota Inválida');
-} else if(nota9 < 0 || nota9 > 10){
+} else if(nota9 <= 0 || nota9 >= 10){
     alert('Nota Inválida');
-} else if(nota10 < 0 || nota10 > 10){
+} else if(nota10 <= 0 || nota10 >= 10){
     alert('Nota Inválida');
-} else if (notaPresenca < 0 || notaPresenca > 10) {
+} else if (notaPresenca <= 0 || notaPresenca >= 10) {
     alert('Nota Inválida');
 }
 
