@@ -1,66 +1,71 @@
 
 let nome = prompt("Qual o seu nome?"); 
-
-let materia1 = 'Matemática';
-let nota1 = Number(prompt('Digite a sua nota de Matemática'));
-
-let materia2 = 'Português';
-let nota2 = Number(prompt('Digite a sua nota de Português'));
-
-let materia3 = 'Informática';
-let nota3 = Number(prompt('Digite a sua nota de Informática'));
-
-let materia4 = 'Geografia';
-let nota4 = Number(prompt('Digite a sua nota de Geografia'));
-
-let materia5 = 'Inglês';
-let nota5 = Number(prompt('Digite a sua nota de Inglês'));
-
-let materia6 = 'História';
-let nota6 = Number(prompt('Digite a sua nota de História'));
-
-let materia7 = 'Filosofia';
-let nota7 = Number(prompt('Digite a sua nota de Filosofia')) ;
-
-let materia8 = 'Sociologia';
-let nota8 = Number(prompt('Digite a sua nota de Sociologia')) ;
-
-let materia9 = 'Literatura';
-let nota9 = Number(prompt('Digite a sua nota de Literatura')) ;
-
-
-let materia10 = 'Educação Física';	
-let nota10 = Number(prompt('Digite a sua nota de Educação Física')) ;
-
-
-let notaPresenca = Number(prompt('Digite sua nota de presença')) ;
-
-
 if(nome.length < 5) {
     alert('Nome Inválido');
 }
 
+let materia1 = prompt('Digite o nome da matéria');
+let nota1 = parseFloat(prompt('Digite a sua nota de ' + materia1));
 if(nota1 <= 0 || nota1 >= 10){
     alert('Nota Inválida');
-} else if(nota2 <= 0 || nota2 >= 10){
+}
+
+let materia2 = prompt('Digite o nome da matéria');
+let nota2 = parseFloat(prompt('Digite a sua nota de ' + materia2));
+if(nota2 <= 0 || nota2 >= 10){
     alert('Nota Inválida');
-} else if(nota3 <= 0 || nota3 >= 10){
+}
+
+let materia3 = prompt('Digite o nome da matéria');
+let nota3 = parseFloat(prompt('Digite a sua nota de ' + materia3));
+if(nota3 <= 0 || nota3 >= 10){
     alert('Nota Inválida');
-} else if(nota4 <= 0 || nota4 >= 10){
+}
+
+let materia4 = prompt('Digite o nome da matéria');
+let nota4 = parseFloat(prompt('Digite a sua nota de ' + materia4));
+if(nota4 <= 0 || nota4 >= 10){
     alert('Nota Inválida');
-} else if(nota5 <= 0 || nota5 >= 10){
+}
+
+let materia5 = prompt('Digite o nome da matéria');
+let nota5 = parseFloat(prompt('Digite a sua nota de ' + materia5));
+if(nota5 <= 0 || nota5 >= 10){
     alert('Nota Inválida');
-} else if(nota6 <= 0 || nota6 >= 10){
+}
+
+let materia6 = prompt('Digite o nome da matéria');
+let nota6 = parseFloat(prompt('Digite a sua nota de ' + materia6));
+if(nota6 <= 0 || nota6 >= 10){
     alert('Nota Inválida');
-} else if(nota7 <= 0 || nota7 >= 10){
+}
+
+let materia7 = prompt('Digite o nome da matéria');
+let nota7 = parseFloat(prompt('Digite a sua nota de ' + materia7)) ;
+if(nota7 <= 0 || nota7 >= 10){
     alert('Nota Inválida');
-} else if(nota8 <= 0 || nota8 >= 10){
+}
+
+let materia8 = prompt('Digite o nome da matéria');
+let nota8 = parseFloat(prompt('Digite a sua nota de ' + materia8)) ;
+if(nota8 <= 0 || nota8 >= 10){
     alert('Nota Inválida');
-} else if(nota9 <= 0 || nota9 >= 10){
+}
+
+let materia9 = prompt('Digite o nome da matéria');
+let nota9 = parseFloat(prompt('Digite a sua nota de ' + materia9));
+if(nota9 <= 0 || nota9 >= 10){
     alert('Nota Inválida');
-} else if(nota10 <= 0 || nota10 >= 10){
+}
+
+let materia10 = prompt('Digite o nome da matéria');	
+let nota10 = parseFloat(prompt('Digite a sua nota de ' + materia10)) ;
+if(nota10 <= 0 || nota10 >= 10){
     alert('Nota Inválida');
-} else if (notaPresenca <= 0 || notaPresenca >= 10) {
+}
+
+let notaPresenca = parseInt(prompt('Digite sua nota de presença')) ;
+if (notaPresenca <= 0 || notaPresenca >= 10) {
     alert('Nota Inválida');
 }
 
@@ -68,16 +73,12 @@ let somaNotas = nota1 + nota2 + nota3 + nota4 + nota5 + nota6 + nota7 + nota8 + 
   
 let mediaNotas = somaNotas / 10;
 
-if(somaNotas <= 100 || somaNotas >= 0){
-    if(nome.length > 5 && mediaNotas <=10 || mediaNotas >= 8){
-        alert(`A nota do aluno ${nome} é de ${mediaNotas} e sua presença de ${notaPresenca}:
-        Aluno Aprovado`);
-    } else if(nome.length > 5 && mediaNotas < 8 || mediaNotas > 0){
-        alert(`A nota do aluno ${nome} é de ${mediaNotas} e sua presença de ${notaPresenca}:
-        Aluno Reprovado`);} 
-    } else {
-    alert(`Dados inválidos`);
+if(nome.length > 5 && mediaNotas <=10 || mediaNotas >= 8){
+    alert(`A nota do aluno(a) ${nome} é de ${mediaNotas} e sua presença de ${notaPresenca}:
+    Aluno(a) Aprovado`);
+} else if(nome.length > 5 && mediaNotas < 8 || mediaNotas > 0){
+    alert(`A nota do aluno(a) ${nome} é de ${mediaNotas} e sua presença de ${notaPresenca}:
+    Aluno(a) Reprovado`);
+} else {
+alert(`Dados inválidos`);
 }
-
-
-
