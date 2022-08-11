@@ -69,7 +69,7 @@ let somaNotas = nota1 + nota2 + nota3 + nota4 + nota5 + nota6 + nota7 + nota8 + 
 let mediaNotas = somaNotas / 10;
 
 let notaPresenca = parseInt(prompt('Digite sua nota de presença')) ;
-if (notaPresenca <= 0 || notaPresenca >= 10) {
+if (notaPresenca <= 0 || notaPresenca > 10) {
     alert('Nota Inválida');
 }
 
