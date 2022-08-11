@@ -1,0 +1,41 @@
+let nome = " "
+
+let materia1=
+nota1=
+let materia2=
+nota2=
+let materia3=
+nota3=
+let materia4=
+nota4=
+let materia5=
+nota5=
+let materia6=
+nota6=
+let materia7=
+nota7=
+let materia8=
+nota8=
+let materia9=
+nota9=
+let materia10=
+nota10=
+
+if(nota <0 && nota > 10)
+if else...
+else valor inválido
+
+if(nome.length < 5){
+nome inválido}
+
+
+somaNotas=nota1+nota2+nota3+nota4+
+nota5+nota6+nota7+nota8+nota9+nota10
+
+mediaNotas= somaNotas/10
+
+notaPresenca=
+
+if(mediaNotas >= 8 && notaPresenca >=6)
+{Aluno aprovado}
+else {aluno reprovado}
