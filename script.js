@@ -73,10 +73,10 @@ if (notaPresenca <= 0 || notaPresenca > 10) {
     alert('Nota Inválida');
 }
 
-if(mediaNotas <= 10 || mediaNotas >= 8){
+if(mediaNotas <= 10 || mediaNotas >= 8 && notaPresenca <= 10 || notaPresenca >= 8){
     alert(`A nota do aluno(a) ${nome} é de ${mediaNotas} e sua presença de ${notaPresenca}:
     Aluno(a) Aprovado`);
-} else if(mediaNotas < 8 || mediaNotas > 0){
+} else if(mediaNotas < 8 || mediaNotas > 0 && notaPresenca < 8 || notaPresenca > 0){
     alert(`A nota do aluno(a) ${nome} é de ${mediaNotas} e sua presença de ${notaPresenca}:
     Aluno(a) Reprovado`);
 } else {
