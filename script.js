@@ -71,6 +71,8 @@ let mediaNotas = somaNotas / 10;
 let notaPresenca = parseInt(prompt('Digite sua nota de presença')) ;
 if (notaPresenca <= 0 || notaPresenca > 10) {
     alert('Nota Inválida');
+} else if (notaPresenca === NaN){
+    alert('Nota inválida')
 }
 
 if(mediaNotas <= 10 || mediaNotas >= 8 && notaPresenca <= 10 || notaPresenca >= 8){
