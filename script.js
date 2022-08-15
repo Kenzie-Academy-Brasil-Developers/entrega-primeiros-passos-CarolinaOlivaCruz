@@ -92,15 +92,13 @@ let notaPresenca = parseInt(prompt('Digite sua nota de presença')) ;
 if (notaPresenca <= 0 || notaPresenca > 10) {
     alert('Nota Inválida');
 } else if(isNaN(notaPresenca)){
-    alert('Nota inválido');
+    alert('Nota inválida');
 }
 
 if(mediaNotas >= 8 && notaPresenca >= 8){
     alert(`A nota do aluno(a) ${nome} é de ${mediaNotas} e sua presença de ${notaPresenca}:
     Aluno(a) Aprovado`);
-} else if(mediaNotas < 8 && notaPresenca <= 10){
+} else {
     alert(`A nota do aluno(a) ${nome} é de ${mediaNotas} e sua presença de ${notaPresenca}:
     Aluno(a) Reprovado`);
-} else {
-alert(`Dados inválidos`);
-}
+} 
